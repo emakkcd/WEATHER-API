@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weat.css">
+</head>
+<body>
+
+    <div class="weather-container">
+        <h2>ReyMark Weather Update ☀️🌦️</h2>
+
+        <input 
+            type="text" 
+            id="city" 
+            placeholder="Enter city / country name"
+        >
+
+        <div class="buttons">
+            <button onclick="getWeather()">Get Weather</button>
+            <button id="resetBtn" onclick="resetWeather()" disabled>Reset</button>
+        </div>
+
+        <div class="loader" id="loader"></div>
+        <div id="result"></div>
+    </div>
+
+    <script src="weat.js"></script>
+</body>
+</html>
